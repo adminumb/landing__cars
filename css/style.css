@@ -1,0 +1,792 @@
+html{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+body{
+    font-size: 16px;
+    line-height: 19px;
+    color: #1b1818;
+}
+
+
+header{
+    background: #332208;
+
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+/*    Вертикальное выравнивание:*/
+    align-items: center;
+    height: 100px;
+    
+}
+.logo{
+    padding: 27px 0px 27px 50px;
+}
+.menu__list{
+    display: flex;
+}
+
+/*Расстояние между элтами 30:*/
+
+.menu__item{
+    margin: 0 15px;
+}
+.menu__list-link{
+    text-transform: uppercase;
+    color: #FEFEFE;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 5px;
+/*     Delay*/
+    transition: all .5s;  
+ border-bottom: 1px transparent;
+    
+    
+}
+/*hover- при наведении мышью*/
+.menu__list-link:hover{
+    border-bottom: 1px solid #FEFEFE;
+}
+.phone{
+    color: #FEFEFE;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/*                     Каршеринг в Киеве */
+
+
+/*Смотреть расстояние через инспект*/
+.top{
+    padding-bottom: 100px;
+}
+
+.top__heading{
+    display: flex;
+    padding: 50px 0 30px;
+}
+.top__title{
+    font-weight:500;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 20px;
+}
+.top__content{
+    text-align: center;
+}
+.top__text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 70px;
+}
+
+.top__btnlink{
+    text-transform: uppercase;
+    background: #C5AC2D;
+    color: #FEFEFE;
+    padding: 16px 16px 16px 16px;
+    transition: all .5s;
+    border: 1px solid transparent;
+}
+/*Нажатие на ссылку*/
+.top__btnlink:hover{
+    color: #FEFEFE;
+    border: 1px solid #FEFEFE;
+    
+}
+
+.top__content{
+    width: 50%;
+}
+
+/*//Делаем слайдер*/
+
+.top__slider{
+    width: 50%;
+}
+.slick-dots{
+    list-style: none;
+    text-align: center;
+}
+.slick-dots button{
+    display: block;
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #332208;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 auto;
+}
+.slick-active button{
+    width: 16px;
+    height: 16px;
+}
+
+.top__slayder-text{
+    font-weight: 500;
+    padding-right: 100px;
+    text-align:center;
+    
+}
+.top__slayder-text span+span{
+    padding-left: 20px;
+}
+
+.top__slider .slick-dots{
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*Более 300 автомобилей в вашем распоряжении*/
+
+.top__bottom{
+    display: flex;
+/*    Опускается вниз*/
+    align-items: flex-end; 
+    justify-content: space-between;
+}
+.top__items{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.top__item{
+    border: 1px solid #1b1818;
+    margin-right: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    cursor: pointer;
+/*    Delay*/
+    transition: all .9s;
+    
+}
+/*    При наведении увеличение на 25%*/
+.top__item:hover{
+    transform: scale(1.25);
+/*        border-bottom: 1px solid #FEFEFE;*/
+
+}
+
+.top__link{
+    color: #1b1818;
+    margin-right: 10px;
+}
+.top__links{
+    padding-right: 80px;
+}
+
+.center__inner{
+    display: flex;
+}
+
+.center{
+    padding: 100px 0;
+    justify-content: space-between;
+}
+
+
+.center__content{
+    width: 300px;
+    margin-right: 20px;
+}
+.center__inner{
+    margin-top: 10px;
+}
+
+.center__title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+.center__text{
+    margin-bottom: 62px;
+}
+.center__text + .center__text{
+    margin-bottom: 40px;
+}
+
+
+.center__item{
+    width: 250px;
+    border: 1px solid black;
+    padding: 0 35px 10px;
+    text-align: center;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+    min-height: 350px;
+}
+
+/*num01*/
+
+.center__item-num{
+    font-weight: 500;
+    font-size: 96px;
+    text-align: center;
+    opacity: 10%;
+    line-height: 115px;
+    margin-bottom: auto;
+    
+}
+
+.center__item-text{
+    padding-top: 20px;
+    margin: auto;
+}
+
+.center__item-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+margin-bottom: auto;
+}
+
+
+/*Делаем блок Преимущества*/
+.benefits{
+    padding: 100px 0;
+    display: flex;
+}
+
+.benefits__list{
+    width: 300px;
+    list-style: none;
+}
+
+.benefits_list-item{
+    margin-bottom: 27px;
+    padding-right: 26px;
+    position: relative;
+}
+
+.benefits_list-item::after{
+    content: '';
+    position: absolute;
+/*    Делаем крожочки:*/
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #1b1818;
+    right: 0;
+ 
+    
+}
+/*Размещаем кружочек*/
+
+.benefits_list-item:nth-child(1),
+.benefits_list-item:nth-child(7){
+    margin-right: 10px;
+}
+.benefits_list-item:nth-child(2),
+.benefits_list-item:nth-child(6){
+    margin-right: 64px;
+}
+.benefits_list-item:nth-child(3),
+.benefits_list-item:nth-child(5){
+    margin-right: 116px;
+}
+.benefits_list-item:nth-child(4){
+margin-right: 158px;
+}
+.benefits__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28,8px;
+    color: #1B1818;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.benefits__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    width: 300px;
+    height: 116px;
+    margin-bottom: 30px;
+    
+}
+.benefits__text + .benefits__text{
+    width: 267;
+    margin-left: auto;
+}
+
+
+.video-popup{
+    width: 200px;
+height: 50px;
+background: #C5AC2D;
+    color: white;
+    text-transform: uppercase;
+    padding: 6px 34px 6px 64px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.video-popup::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(../PLAY.svg);
+    top: 12px;
+    left: 30px;
+}
+.benefits__content{
+    text-align: right;
+}
+
+/*<!--   БЛОК ОТЗЫВЫ-->*/
+
+.feedbacks{
+    height: 650px;
+    background: #332208;
+    margin-top: 20px;
+}
+.feed__title{
+    color: white;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 24px;
+    line-height: 28,8px;
+
+}
+
+.feedbacks__items{
+    display: flex;
+}
+
+.feedbacks__content{
+    border: 1px solid #C5AC2D;
+    margin-right: 30px;
+    width: 270px;
+    height: 300px;
+    margin-top: 70px;
+}
+
+.feedbacks__title-text{
+    color: #FEFEFE;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18,75px;
+    text-align: center;
+    padding: 50px 45px;
+
+    
+}
+
+.feedbacks__title{
+    padding: 45px 45px 0 45px;
+        color: #FEFEFE;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28,8px;
+    text-align: center;
+
+}
+
+
+
+/*Слайдер для отзывов*/
+
+
+.feedbacks__items .slick-dots button{
+    background-color:gold;
+
+}
+
+.feedbacks__items .slick-dots {
+    display: flex;
+     right: 0;
+    position: absolute;
+    bottom: -20%;
+    transform: translateY(-50%);
+   text-align: center;
+    justify-content: center;
+` border: none;
+    border-radius: 50%;
+}
+
+
+.feedbacks__items button {
+  margin: 0 5px;
+    line-height: 12px;
+    
+`
+}
+
+.slick-slider:focus {
+    outline: none;
+}
+
+
+/*QUESTIONS*/
+
+.questions{
+    padding: 100 0;
+    
+}
+
+
+.questions__items{
+    display: flex;
+    align-items: center;
+}
+
+.questions__content-img{
+    width: 50%;
+   
+}
+
+
+
+
+.questions__from{
+    width: 415px;
+    margin: 0 auto;
+    
+    
+}
+.questions__form-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1b1818;
+    margin-bottom: 5px;
+    
+}
+.questions__form-text{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #1b1818;
+}
+
+.questions__input{
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1 px solid rgba(0,0,0, .1);
+    
+}
+.questions__input + .questions__input{
+    margin-bottom: 50px;
+}
+
+
+.questions__button{
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
+    background: #C5AC2D;
+    color: white;
+/*    Чтобы не оставались следы анимации*/
+        border: 1px  transparent;
+
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.questions__button:hover{
+     color: #FEFEFE;
+    border: 1px solid #FEFEFE;   
+      
+}
+
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    background: #332208;
+    padding: 100px 0 24px;
+}
+
+.footer__top{
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    margin-bottom: 21px;
+    align-items: center;
+    
+}
+.footer__top > .phone{
+    padding-left: 100px;
+}
+
+.footer__top > .top__btnlink{
+    margin-right: 100px;
+}
+
+.footer__social{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    
+}
+.footer__social-link{
+    margin: 0 15px;
+}
+
+
+/*АДАПТИВ*/
+
+.menu__btn{
+    display: none;
+}
+
+@media(max-width 1250px){
+ .benefits__images{
+        width: 40%;
+    }
+}
+
+
+
+@media(max-width: 1140px){
+    .center__inner{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .center__content {
+        text-align: center;
+    width: 100%;
+        margin-bottom: 30px;
+}
+    .center__item{
+        margin-bottom: 16px;
+    }
+}
+
+
+@media(max-width: 1000px){
+    .top__heading{
+        display: block;
+    }
+    .top__content{
+        width: 100%;
+        padding-top: 30px;
+    }
+    .top__slider{
+        width: 100%;
+    }
+    .top__bottom{
+        display: block;
+        
+    }
+    .top__links{
+        padding-right: 0;
+        text-align: right;
+        padding-top: 50px;
+    }
+    .top__items{
+      width: 100%;
+    }
+    .top__slayder-text{
+        text-align: center;
+    }
+    .benefits__content{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .benefits__items{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .benefits__text+.benefits__text{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 860px){
+    .menu{
+        order: 1;
+    }
+    
+    .footer .menu{
+        display: none;
+    }
+    .menu__list{
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #332208;
+/*        Расширение на весь экран*/
+        right: 0;
+        transform:translateY(-500px);
+         transition: all .5s;
+
+    }
+    
+    .menu__list-link{
+        padding:20px 0;
+        display: block;
+        text-align: center;
+    }
+    
+    .menu__list--active{
+        transform: translateY(0px);
+        transition: all .5s;
+    }
+    .logo{
+        padding-left: 5px;
+    }
+    
+    .menu__btn{
+        display: block;
+        width: 35px;
+        height: 24px;
+        border: none;
+        border-bottom: 2px solid #fefefe;
+        border-top: 2px solid #fefefe;
+        background-color: transparent;
+        position: relative;
+    
+    }
+    .menu__btn::before{
+        content: '';
+        position: absolute;
+        width: 35px;
+/*        Торлщина линии*/
+        height: 2px; 
+        background-color: #fefefe;
+        left: 0px;
+        top: 9px;
+    }
+    
+    
+}
+
+@media(max-width: 580px){
+    .center__item{
+        width: 100%;
+        min-height: 245px;
+        margin: 30px 0;
+        
+    }
+    .center__item-title{
+        margin-bottom: 20px;
+    }
+    .top {
+    padding-bottom: 0px;
+}
+    
+}
+
+
+
+@media (max-width:525px){
+    
+    .top__slayder-text{
+        padding-right: 0
+    }
+    .benefits__images{
+        width: 70%;
+    }
+    .top__items{
+        flex-wrap: wrap;
+        
+    }
+    .top__item{
+        margin: 20px;
+        
+    }
+    .benefits__list{
+        width: 100%;
+    }
+    .benefits_list-item{
+        margin-right: 0;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 26px;
+        
+    }
+    .benefits_list-item::after{
+        right: auto;
+        left: 0;
+    }
+    
+}
+
+@media(max-width: 410px){
+    .top__item{
+        width: 100%;
+        margin-left: 10px;
+        min-height: 120px;
+    }
+    .top__links{
+        display: flex;
+        flex-direction: column;
+    }
+    .top__link {
+    color: #1b1818;
+    margin-right: 10px;
+    padding: 0 10px 5px 10px;
+    text-align: center;
+}
+    .top__slayder-text{
+        text-align: right;
+    }
+    .footer__top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .phone{
+        margin-top: 30px;
+        display: inline-block;
+    }
+    
+}
+
+
+
+
+
+
